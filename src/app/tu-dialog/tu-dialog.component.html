@@ -9,38 +9,27 @@
     </mat-form-field>
     <label>Descripcion de la etapa</label>
     <mat-form-field appearance="outline">
-      <textarea matInput></textarea>
+      <textarea matInput formControlName="descripcion" ></textarea>
     </mat-form-field>
     <label>Entregable de la etapa</label>
     <mat-form-field appearance="outline">
-      <input matInput formControlName="titulo" />
+      <input matInput formControlName="etapa" />
     </mat-form-field>
     <label>Fecha de Inicio</label>
     <mat-form-field>
       <mat-label>Choose a date</mat-label>
-      <input matInput [matDatepicker]="picker" />
+      <input matInput [matDatepicker]="picker" formControlName="inicio"  />
       <mat-datepicker-toggle
         matIconSuffix
         [for]="picker"
       ></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
-    <label>Fecha de fin</label>
-    <mat-form-field>
-      <mat-label>Choose a date</mat-label>
-      <input matInput [matDatepicker]="picker" />
-      <mat-datepicker-toggle
-        matIconSuffix
-        [for]="picker"
-      ></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-
   </form>
 </div>
 <div mat-dialog-action [align]="'end'">
   <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
-  <button style="margin-left: 8px" mat-raised-button color="primary">
+  <button style="margin-left: 8px" mat-raised-button color="primary" (click)="addProduct()">
     Enviar
   </button>
 </div>

@@ -23,6 +23,15 @@ import {MatNativeDateModule} from '@angular/material/core'
 
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatSortModule} from '@angular/material/sort';
+
+
+
+
+
 
 
 @NgModule({
@@ -54,7 +63,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDialogModule,
     MatNativeDateModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
 
   
