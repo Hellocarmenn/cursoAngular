@@ -30,30 +30,34 @@
 <mat-grid-list cols="3" style="margin-top: -15%;">
   <mat-grid-tile>
     <div>
-      <label>Responsable del Proyecto</label>
+      <label>Responsables del Proyecto</label>
       <br>
-      <input matInput placeholder="Agregar responsables del Proyecto " />
+      <input placeholder="Agregar Responsables del proyecto"  style="border: 1px solid #eaeaea;width: 180%;border-radius: 5px;">
     </div>
   </mat-grid-tile>
   <mat-grid-tile>
-    <div>
-      <label>Responsable del Proyecto</label>
-      <br>
-      <input matInput placeholder="Agregar responsables del Proyecto " />
-    </div>
+    <form>
+      <mat-form-field>
+        <mat-select name="admin">
+          <mat-option value="Israel Ayala Vazque">Israel Ayala Vazque</mat-option>
+          <mat-option value="Adrian Laurel Isidor">Adrian Laurel Isidor</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
   </mat-grid-tile>
   <mat-grid-tile>
     <div>
-      <label>Responsable del Proyecto</label>
+      <label>Involucrados(opcional)</label>
       <br>
-      <input matInput placeholder="Agregar responsables del Proyecto " />
+      <input placeholder="Agregar involucrados "  style="border: 1px solid #eaeaea;width: 180%;border-radius: 5px;">
     </div>
   </mat-grid-tile>
 </mat-grid-list>
 
 
-app-icon-dialog
 <app-icon-dialog></app-icon-dialog>
+
+
 
 
 

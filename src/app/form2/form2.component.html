@@ -1,41 +1,37 @@
 <mat-card>
   <mat-card-content>
-    <div class="example-container">
-      <mat-form-field hintLabel="Max 10 characters">
+    <div class="example-container" >
         <label>ID Proyecto</label>
-        <input
+        <div style="display: flex;">
+          <input style="width: 50%;"
           matInput
           #input
-          maxlength="10"
-          placeholder="Escribe le número de ID Proyectos Sipres"
-        />
-        <mat-hint align="end">{{ input.value.length }}/10</mat-hint>
-      </mat-form-field>
-      <mat-form-field>
-        <br />
-        <button mat-flat-button>Buscar Proyecto</button>
-      </mat-form-field>
+          placeholder="Escribe le número de ID Proyectos Sipres"/>
+          <button mat-flat-button style="background-color: #fec702;border-radius: 50px;margin-left: 20px;">Buscar Proyecto</button>
+
+        </div>
+
     </div>
     <div>
             <label>Nombre del Proyecto</label>
-            <input matInput value="">
+            <input matInput value="" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
     </div>
     <div>
             <label>Descripcion de Proyecto</label>
-            <input matInput value="">
+            <input matInput value="" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
     </div>
     <div>
         <mat-form-field>
             <label>Fecha de Creacion</label>
-            <input matInput value="dd/mm/aaaa">
+            <input matInput value="dd/mm/aaaa" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
           </mat-form-field>
           <mat-form-field>
             <label>Capex</label>
-            <input matInput >
+            <input matInput style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;" >
           </mat-form-field>
           <mat-form-field>
             <label>Opex</label>
-            <input matInput >
+            <input matInput style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;" >
           </mat-form-field>
     </div>
     <div style="display: flex;justify-content: space-between;">

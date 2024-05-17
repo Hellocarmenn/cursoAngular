@@ -17,6 +17,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import { IconDialogComponent } from './icon-dialog/icon-dialog.component';
 import { TuDialogComponent } from './tu-dialog/tu-dialog.component';
 import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
+import { SelectComponent } from './select/select.component';
+
+
 
 
 
@@ -28,6 +32,7 @@ import { FormComponent } from './form/form.component';
     Form2Component,
     IconDialogComponent,
     TuDialogComponent,
+    SelectComponent,
 
     
   ],
@@ -42,7 +47,9 @@ import { FormComponent } from './form/form.component';
     MatSelectModule,
     MatDatepickerModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    FormsModule,
+
   
   ],
   providers: [

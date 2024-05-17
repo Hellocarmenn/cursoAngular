@@ -26,14 +26,9 @@
     width: 3%;
 }
 
-mat-grid-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  mat-grid-tile {
-    flex: 1 0 33%; /* Ajusta el ancho de las columnas */
-  }
+
+
+
   
 
 
