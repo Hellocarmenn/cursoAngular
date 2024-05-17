@@ -9,12 +9,16 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
-import { FormComponent } from './form/form.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { DateRangePickerComponent } from './date-range-picker/date-range-picker.component';
 import { Form2Component } from './form2/form2.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
+import { IconDialogComponent } from './icon-dialog/icon-dialog.component';
+import { TuDialogComponent } from './tu-dialog/tu-dialog.component';
+import { FormComponent } from './form/form.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +26,8 @@ import {MatDividerModule} from '@angular/material/divider';
     FormComponent,
     DateRangePickerComponent,
     Form2Component,
+    IconDialogComponent,
+    TuDialogComponent,
 
     
   ],
