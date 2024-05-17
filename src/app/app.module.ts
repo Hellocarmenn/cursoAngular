@@ -17,7 +17,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { IconDialogComponent } from './icon-dialog/icon-dialog.component';
 import { TuDialogComponent } from './tu-dialog/tu-dialog.component';
 import { FormComponent } from './form/form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectComponent } from './select/select.component';
 import {MatNativeDateModule} from '@angular/material/core'
 
@@ -53,6 +53,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatInputModule,
     MatDialogModule,
     MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule
+
 
   
   ],
