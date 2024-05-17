@@ -1,17 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { FormBuilder, FormGroup,Validator, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-tu-dialog',
   templateUrl: './tu-dialog.component.html',
   styleUrls: ['./tu-dialog.component.css']
 })
-export class TuDialogComponent {
+export class TuDialogComponent implements OnInit {
 
-  constructor(public dialogRef: MatDialogRef<TuDialogComponent>) { }
+  
+  freshnessList = ["Brand New","Second Han","Refurbished"];
+  productForm !: FormGroup;
+  constructor(private formBuilder :FormBuilder){}
 
-  // Método para cerrar el diálogo
-  closeDialog(): void {
-    this.dialogRef.close();
+
+  ngOnInit(): void {
+    this.productForm = this.formBuilder.group({
+      titulo :['',Validators.required],
+      descripcion :['',Validators.required],
+      etapa :['',Validators.required],
+      inicio :['',Validators.required],
+      fin :['',Validators.required]
+
+    }) 
   }
 }

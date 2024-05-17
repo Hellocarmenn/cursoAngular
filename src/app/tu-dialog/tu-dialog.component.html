@@ -15,7 +15,21 @@
       <mat-option  value="Fruits">Fruits</mat-option>
     </mat-select>
   </mat-form-field>
-  
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Comment</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+  <button style="margin-left: 8px;" mat-raised-button color="primary">Enviar</button>
 </div>
 
 
