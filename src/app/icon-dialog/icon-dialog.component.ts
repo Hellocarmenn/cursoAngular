@@ -13,7 +13,7 @@ export class IconDialogComponent {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(TuDialogComponent, {
-      width: '400px', // ajusta el ancho según tus necesidades
+      width: '50%', // ajusta el ancho según tus necesidades
       data: {} // puedes pasar datos al diálogo si es necesario
     });
 

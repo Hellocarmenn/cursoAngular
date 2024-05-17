@@ -8,40 +8,42 @@
           #input
           placeholder="Escribe le número de ID Proyectos Sipres"/>
           <button mat-flat-button style="background-color: #fec702;border-radius: 50px;margin-left: 20px;">Buscar Proyecto</button>
-
         </div>
 
     </div>
-    <div>
+    <div style="margin-top: 5%;">
             <label>Nombre del Proyecto</label>
             <input matInput value="" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
     </div>
-    <div>
-            <label>Descripcion de Proyecto</label>
-            <input matInput value="" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
+    <div style="margin-top: 5%;">
+      <label>Descripcion de Proyecto</label>
+      <input matInput value="" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
     </div>
-    <div>
-        <mat-form-field>
-            <label>Fecha de Creacion</label>
-            <input matInput value="dd/mm/aaaa" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
-          </mat-form-field>
-          <mat-form-field>
-            <label>Capex</label>
-            <input matInput style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;" >
-          </mat-form-field>
-          <mat-form-field>
-            <label>Opex</label>
-            <input matInput style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;" >
-          </mat-form-field>
+    <div style="margin-top: 5%;">
+      <div class="col-sm-4">
+        <label>Fecha de Creacion</label>
+        <input matInput value="dd/mm/aaaa" style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;">
+      </div>
+      <div class="col-sm-4">
+        <label>Capex</label>
+        <input matInput style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;" >
+      </div>
+      <div class="col-sm-4">
+        <label>Opex</label>
+        <input matInput style="background-color: #eaeaea;border-color:#eaeaea ;border: none;outline: none;box-shadow: none;border-radius: 5px;" >
+      </div>
     </div>
-    <div style="display: flex;justify-content: space-between;">
-        
-        <label>Pilar Del Proyecto </label>
-        <label>Clasificación Comite de Inversión</label>
-    </div>
-    <div style="display: flex;justify-content: space-between;">
-        <div class="linea"></div>
-        <div class="linea"></div>
-    </div>
+<div style="margin-top: 10%;">
+  <div  style="margin-top: 10%;">
+    <label class="col-sm-6" style="margin-top: 3%;">Pilar Del Proyecto </label>
+    <label class="col-sm-6" style="margin-top: 3%;">Clasificación Comite de Inversión</label>
+  </div>
+  <div>
+      <div class="linea col-sm-5" style="margin-top: 10%;"></div>
+      <div class="linea col-sm-6" style="margin-top: 10%;"></div>
+  </div>
+  
+</div>
+    
   </mat-card-content>
 </mat-card>

@@ -1,11 +1,8 @@
-.example-container mat-form-field + mat-form-field {
-    margin-left: 8px;
-  }
+
   mat-card{
     width: 100%;
     background-color: #EFF5FC;
     border-radius: 5px;
-
   }
   input{
     width: 100%;

@@ -19,9 +19,10 @@ import { TuDialogComponent } from './tu-dialog/tu-dialog.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import { SelectComponent } from './select/select.component';
+import {MatNativeDateModule} from '@angular/material/core'
 
-
-
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -49,6 +50,9 @@ import { SelectComponent } from './select/select.component';
     MatCardModule,
     MatDividerModule,
     FormsModule,
+    MatInputModule,
+    MatDialogModule,
+    MatNativeDateModule,
 
   
   ],

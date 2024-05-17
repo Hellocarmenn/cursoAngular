@@ -1,36 +1,22 @@
 <!-- app.component.html -->
-<form >
-    <label>Editar Etapa</label>
-    <div>
-      <button type="button">X</button>
-    </div>
-    <div>
-      <label for="nombre">Titulo de la Iniciativa</label>
-    </div>
-    <input style="width: 100%;" type="text" id="nombre" name="nombre" ngModel required>
+<h1 mat-dialog-title>Agrega etapa</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput >
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Category</mat-label>
+    <mat-select>
+      <mat-option  value="Fruits">Fruits</mat-option>
+      <mat-option  value="Fruits">Fruits</mat-option>
+      <mat-option  value="Fruits">Fruits</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+</div>
 
-    <div>
-      <label for="descripcion">Descripción de la etapa</label>
-    </div>
-    <textarea id="descripcion" name="descripcion" ngModel></textarea>
-    <div>
-      <label for="otro">Entregable de la etapa</label>
-    </div>
-    <input type="text" id="otro" name="otro" ngModel>
 
-    <div>
-      <label for="fechaInicio">Fecha de Inicio:</label>
-    </div>
-    <input type="date" id="fechaInicio" name="fechaInicio" ngModel>
-
-    <div>
-      <label for="fechaFin">Fecha de Fin:</label>
-    </div>
-    <input type="date" id="fechaFin" name="fechaFin" ngModel>
-
-    <div>
-      <button type="button">Cancelar</button>
-      <button type="submit">Agregar</button>
-    </div>
-  </form>
   
