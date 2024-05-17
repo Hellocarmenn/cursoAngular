@@ -1,0 +1,27 @@
+.example-form {
+    min-width: 180px;
+    max-width: 600px;
+    width: 150%;
+  }
+  
+  .example-full-width {
+    width: 150%;
+  }
+mat-label{
+    color: black;
+}  
+label{
+    font-size: 14px;
+}
+
+.boton {
+    background-color: #FFA500; /* Cambia el color a tu preferencia */
+    color: white; /* Cambia el color del texto si es necesario */
+  }
+
+  input{
+    margin-left: -1.5%;
+    width: 60%;
+    border-radius: 5px;
+  }
+  
