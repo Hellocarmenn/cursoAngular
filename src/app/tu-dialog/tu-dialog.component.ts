@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from '../services/api.service';
 
@@ -13,7 +13,10 @@ export class TuDialogComponent implements OnInit {
   
   freshnessList = ["Brand New","Second Han","Refurbished"];
   productForm !: FormGroup;
-  constructor(private formBuilder :FormBuilder,private api : ApiService, private dialogRef : MatDialogRef<TuDialogComponent>){}
+  constructor(private formBuilder :FormBuilder,
+    private api : ApiService, 
+    @Inject(MAT_DIALOG_DATA) public editData: any,
+    private dialogRef : MatDialogRef<TuDialogComponent>){}
 
 
   ngOnInit(): void {
@@ -23,7 +26,8 @@ export class TuDialogComponent implements OnInit {
       etapa :['',Validators.required],
       inicio :['',Validators.required],
 
-    }) 
+    }) ;
+    console.log(this.editData);
   }
   addProduct(){
     if(this.productForm.valid){

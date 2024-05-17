@@ -15,7 +15,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class IconDialogComponent  implements OnInit{
 
-  displayedColumns: string[] = ['titulo', 'descripcion', 'etapa', 'inicio'];
+  displayedColumns: string[] = ['titulo', 'descripcion', 'etapa', 'inicio','action'];
   dataSource: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -50,6 +50,17 @@ export class IconDialogComponent  implements OnInit{
       }
     } )
   }
+
+  editProduct(row : any){
+    this.dialog.open(TuDialogComponent,{
+      data:row,
+      width:'30%'
+    })
+  }
+
+
+
+
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;

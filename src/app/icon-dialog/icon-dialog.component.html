@@ -27,14 +27,26 @@
       
           <!-- Name Column -->
           <ng-container matColumnDef="etapa">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Etapa </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Entregable </th>
             <td mat-cell *matCellDef="let row"> {{row.etapa}} </td>
           </ng-container>
       
           <!-- Fruit Column -->
           <ng-container matColumnDef="inicio">
-            <th mat-header-cell *matHeaderCellDef mat-sort-header> Inicio </th>
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Fecha Inicio </th>
             <td mat-cell *matCellDef="let row"> {{row.inicio}} </td>
+          </ng-container>
+        
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
+            <td mat--cell *matCellDef="let row ">
+                <button mat-icon-button color="primary">
+                    <mat-icon><img src="assets/img/editar.svg">Editar</mat-icon>
+                </button>
+                <button mat-icon-button color=""warn>
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
           </ng-container>
       
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -45,10 +57,7 @@
             <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
           </tr>
         </table>
-      
-        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
       </div>
-      
     </div>
   
   </div>
