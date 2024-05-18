@@ -27,7 +27,13 @@ export class TuDialogComponent implements OnInit {
       inicio :['',Validators.required],
 
     }) ;
-    console.log(this.editData);
+    if (this.editData){
+      this.productForm.controls['titulo'].setValue(this.editData.titulo);
+      this.productForm.controls['descripcion'].setValue(this.editData.descripcion);
+      this.productForm.controls['etapa'].setValue(this.editData.etapa);
+      this.productForm.controls['inicio'].setValue(this.editData.inicio);
+
+    }
   }
   addProduct(){
     if(this.productForm.valid){
