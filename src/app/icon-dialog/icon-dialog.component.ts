@@ -53,8 +53,8 @@ export class IconDialogComponent  implements OnInit{
 
   editProduct(row : any){
     this.dialog.open(TuDialogComponent,{
-      data:row,
-      width:'30%'
+      width:'30%',
+      data:row
     })
   }
 

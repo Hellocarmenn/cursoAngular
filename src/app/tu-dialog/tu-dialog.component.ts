@@ -34,7 +34,6 @@ export class TuDialogComponent implements OnInit {
       this.api.postProduct(this.productForm.value)
       .subscribe({
         next:(res)=>{
-          alert("Agregado")
           this.productForm.reset();
           this.dialogRef.close('save');
         },
